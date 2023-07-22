@@ -55,7 +55,7 @@ void send_SMS()
   updateSerial();
   Serial2.println("AT+CMGF=1"); // Configuring TEXT mode
   updateSerial();
-  Serial2.println("AT+CMGS=\"+201150193251\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+  Serial2.println("AT+CMGS=\"+zzxxxxxxxxxxx\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
   updateSerial();
   Serial2.print("Temp: " + String(t) + " | Hum:"+String(h)+" | Latitude: "+String(lat_gps, 6)+" | Longitude: "+String(lng_gps, 6)); //text content
   updateSerial();
