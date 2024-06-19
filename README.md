@@ -36,7 +36,8 @@
 - Sender: Collects and sends pharmaceutical cargo data via SMS (temperature, humidity, location).
 - Receiver: Receives SMS, extracts data, and transmits it over Wi-Fi for further processing.
 
-### Instructions:
+## Instructions
+
 1. **Sender Circuit:**
    - Connect Arduino Mega to GPS Neo6, DHT22, and SIM800L modules.
    - Power the circuit with two batteries.
@@ -56,8 +57,15 @@
    - Customize SMS recipient number in the `send_SMS()` function.
    - Ensure strong network signals for reliable SMS transmission.
 
-### Troubleshooting:
+## Troubleshooting
 - Check Wi-Fi network credentials in the receiver circuit.
 - Confirm proper power supply to all modules.
 - Verify correct wiring and connections.
 - Monitor Serial Monitor outputs for debugging.
+
+## Images
+
+![Receive Circuit](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Recieve%20circuit.jpg?raw=true)
+![Receiver](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Reciever.jpg?raw=true)
+![Truck Circuit](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Truck%20circuit.jpg?raw=true)
+![Sender](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Sender.jpg?raw=true)
