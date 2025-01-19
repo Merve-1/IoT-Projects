@@ -1,0 +1,6 @@
+//Buzzer
+DIO_voidSetPinDirection(DIO_PORTA, DIO_PIN3, DIO_PIN_OUTPUT); // BUZZ
+
+// Initialize switches
+SWITCH_voidInit(SWITCH_0_PORT, SWITCH_0_PIN);
+SWITCH_voidInit(SWITCH_1_PORT, SWITCH_1_PIN);
