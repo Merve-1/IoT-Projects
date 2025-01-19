@@ -1,71 +1,42 @@
-# Pharmaceutical Cargo Monitoring System
+# IoT Projects 🌐  
 
-## Sender Circuit
+## Repository Overview  
 
-### Components:
-- **Arduino Mega:** Central control unit.
-- **GPS Neo6 Module:** Determines accurate location data.
-- **DHT22 Sensor:** Measures temperature and humidity.
-- **SIM800L Module:** GSM/GPRS modem for sending SMS messages.
+Welcome to the **IoT Projects** repository! This repository contains various IoT projects I have worked on. Currently, it includes two projects:  
 
-### Key Functions:
-- `setup()`: Initializes serial communication and modules.
-- `loop()`: Collects temperature, humidity, and location data. Sends SMS every 10 seconds.
-- `updateSerial()`: Forwards data between Arduino's hardware serial and software serial.
-- `send_SMS()`: Initializes SIM800L module, configures text mode, and sends SMS with data.
+1. **Tracking of Pharmaceutical Products**: A system that tracks pharmaceutical products in cargo vehicles by collecting data such as humidity, temperature, and location. This data is sent via SMS to a receiving circuit at the company's end.  
+2. **Secure Home**: A simulation for a smart home security system. Currently, it is a work-in-progress project that will feature AES encryption for secure data handling.  
 
-### DHT22 Sensor and Neo6 GPS Handling:
-- Temperature and humidity obtained using `get_temp()` from DHT22 sensor.
-- Location data (latitude and longitude) obtained using `get_location()` and `displayInfo()` from Neo6 GPS module.
+## Projects  
 
-## Receiver Circuit
+### 1. **Tracking of Pharmaceutical Products**  
 
-### Components:
-- **ESP8266 Module:** Equipped with Wi-Fi capabilities.
-- **SIM800L Module:** Connected to ESP8266 for receiving SMS messages.
+This system integrates sensors in cargo vehicles to monitor:
+- **Humidity**  
+- **Temperature**  
+- **Location**  
 
-### Key Functions:
-- `setup()`: Connects to Wi-Fi, initializes serial communication, and configures SIM800L module.
-- `loop()`: Forwards data between Arduino and SIM800L module.
+The collected data is sent via SMS, which is then received and processed by a circuit at the company's end to ensure product integrity and security during transit.  
 
-### Functions:
-- `updateSerial()`: Forwards data between Arduino and SIM800L module. Parses received SMS data.
-- SMS Data Parsing: Extracts temperature, humidity, latitude, and longitude values.
+### 2. **Secure Home**  
 
-### Overall Purpose:
-- Sender: Collects and sends pharmaceutical cargo data via SMS (temperature, humidity, location).
-- Receiver: Receives SMS, extracts data, and transmits it over Wi-Fi for further processing.
+A smart home simulation focusing on security. The project is still under development and will include:
+- **AES Encryption** for secure communication and data handling.  
+- Sensors for monitoring home security, environmental factors, and automation.  
 
-## Instructions
+## Technologies Used  
 
-1. **Sender Circuit:**
-   - Connect Arduino Mega to GPS Neo6, DHT22, and SIM800L modules.
-   - Power the circuit with two batteries.
-   - Ensure correct wiring and connections.
+- **Arduino**: For interfacing with sensors and circuits.
+- **AES Encryption**: For secure data handling (in development).  
 
-2. **Receiver Circuit:**
-   - Connect ESP8266 to SIM800L module.
-   - Power the circuit with two batteries.
-   - Set correct Wi-Fi credentials (SSID and password).
-   - Confirm proper wiring.
+## Getting Started  
 
-3. **Operation:**
-   - Deploy sender and receiver circuits in cargo transport.
-   - Monitor received data through the Wi-Fi connection of the receiver.
+### Prerequisites  
 
-4. **Additional Notes:**
-   - Customize SMS recipient number in the `send_SMS()` function.
-   - Ensure strong network signals for reliable SMS transmission.
+- 💻 **Arduino IDE**  
+- 🔐 **Cryptography Library** (for AES encryption, in development)  
 
-## Troubleshooting
-- Check Wi-Fi network credentials in the receiver circuit.
-- Confirm proper power supply to all modules.
-- Verify correct wiring and connections.
-- Monitor Serial Monitor outputs for debugging.
+## Future Developments  
 
-## Images
+Projects will expand to include more features and enhancements, such as automated alerts, advanced security mechanisms, and integration with IoT platforms.  
 
-![Receive Circuit](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Recieve%20circuit.jpg?raw=true)
-![Receiver](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Reciever.jpg?raw=true)
-![Truck Circuit](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Truck%20circuit.jpg?raw=true)
-![Sender](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Sender.jpg?raw=true)
