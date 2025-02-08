@@ -65,7 +65,7 @@
 
 ## Images
 
-![Receive Circuit](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Recieve%20circuit.jpg?raw=true)
-![Receiver](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Reciever.jpg?raw=true)
-![Truck Circuit](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Truck%20circuit.jpg?raw=true)
-![Sender](https://github.com/Merve-1/IoT-Tracking-System/blob/main/Sender.jpg?raw=true)
+![image](https://github.com/user-attachments/assets/5a7d5c57-79a0-4be9-a89b-c04db27221a0)
+![image](https://github.com/user-attachments/assets/e3a4475f-f33d-4c97-a77f-1bc2c45ab45b)
+![image](https://github.com/user-attachments/assets/3e5c3564-9aec-4ccc-8d5c-3791823b8910)
+![image](https://github.com/user-attachments/assets/fd712db9-d0a8-4cb3-8272-1715d33121bf)
